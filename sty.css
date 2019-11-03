@@ -1,0 +1,127 @@
+html {
+    background-color: #dcdee0;
+}
+
+#main-frame {
+    position: relative;
+    height: 600px;
+    padding: 20px;
+    width: 750px;
+    background: url('Images/GameWallpaper.jpg');
+    background-size: contain;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#small-left-div {
+    display: none;
+    position: absolute;
+    height: 30px;
+    width: 110px;
+    background-color: palegoldenrod;
+    padding: 10px;
+    border-radius: 5px;
+    /* for all browser */
+}
+
+#small-left-div img {
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    width: 35px;
+}
+
+#screen {
+    position: relative;
+    height: 420px;
+    width: 700px;
+    background-color: #fff;
+    margin: 60px auto 2px auto;
+    overflow: hidden;
+}
+
+#fruitID {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+
+#score {
+    float: right;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkgoldenrod;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 110px;
+}
+
+#screen-below-heading {
+    text-align: center;
+    width: 700px;
+    line-height: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    margin-left: 25px;
+    /* Box Shadows For Every Browser */
+    box-shadow: 0px 3px 0px violet;
+    -ms-box-shadow: 0px 3px 0px violet;
+    -moz-box-shadow: 0px 3px 0px violet;
+    -o-box-shadow: 0px 3px 0px violet;
+    -webkit-box-shadow: 0px 3px 0px violet;
+}
+
+#button {
+    height: 30px;
+    width: 100px;
+    background-color: chartreuse;
+    padding: 7px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    margin: 8px auto;
+    /* Box Shadows for Every Browser */
+    box-shadow: 0px 3px 0px greenyellow;
+    -ms-box-shadow: 0px 3px 0px greenyellow;
+    -moz-box-shadow: 0px 3px 0px greenyellow;
+    -o-box-shadow: 0px 3px 0px greenyellow;
+    -webkit-box-shadow: 0px 3px 0px greenyellow;
+}
+
+#button:active {
+    background-color: #359612;
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px;
+}
+
+#gameover {
+    position: absolute;
+    top: 120px;
+    left: 110px;
+    height: 300px;
+    width: 580px;
+    background: url('Images/GameWallpaper.jpg');
+    background-size: cover;
+    font-size: 45px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0px 10px 8px 3px grey;
+    -ms-box-shadow: 10px 10px 10px grey;
+    -moz-box-shadow: 10px 10px 11px grey;
+    -o-box-shadow: 10px 10px 10px grey;
+    -webkit-box-shadow: 10px 10px 10px grey;
+}
+
+#gameover p {
+    margin-top: 60px;
+    background: rgba(000, 000, 000, 0.4);
+    animation: 1.4s gameoverAnimate ease;
+}
+
+@keyframes gameoverAnimate {
+    from {margin-top: 300px;}
+    to {margin-top: 60px;}
+}
